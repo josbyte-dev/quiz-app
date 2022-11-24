@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media (min-width: 740px) {
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+.respuestas {
+    padding: 2rem 0;
+}
+
+.respuestas button {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 6px solid transparent;
+}
+
+.next-question {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.next-question span {
+    margin-right: auto;
+}
+
+.explication {
+    width: 100%;
+}
+
+
+/* Correct and incorrect css validation */
+.correct {
+    border: 6px solid rgb(69, 184, 69) !important;
+}
+
+.incorrect {
+    border: 6px solid rgb(230, 39, 39) !important;
+}
